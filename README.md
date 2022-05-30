@@ -4,7 +4,7 @@
 It's a project of Awesome books: With plain HTML5, CSS3, JS, and ES6 modular structure implemented
 
 # View Live
-- To view a demo [@click Here](https://ritobrotomukherjee.github.io/awesome-books-modular/)
+- To view a demo [@click Here](https://ritobrotomukherjee.github.io/awesome-books-modular/pages)
 
 ## Built With
 
