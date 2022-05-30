@@ -1,9 +1,13 @@
-import { BookStore, getHTML } from './books/bookObj.js';
+import BookStore from './modules/bookObj.js';
+
+import getHTML from './modules/getHTML.js';
+
+import { DateTime } from './modules/luxon.js';
 
 const bookStore = new BookStore();
 
 // Only to show current date and time
-const today = new Date();
+const today = DateTime.now();
 
 const inputTitle = document.getElementById('book-title');
 const inputAuthor = document.getElementById('book-author');
@@ -20,7 +24,21 @@ const listBookPage = document.querySelector('#book-list-section');
 const addBooksPage = document.querySelector('#add-books');
 const contactPage = document.querySelector('#contact-info-section');
 
-// create HTML from fragment
+const updateBooks = () => {
+  const title = inputTitle.value;
+  const author = inputAuthor.value;
+
+  const errorShow = document.querySelector('.error');
+
+  if (title === '' && author === '') {
+    return errorShow.classList.remove('display-none');
+  }
+  errorShow.classList.add('display-none');
+  inputTitle.value = '';
+  inputAuthor.value = '';
+  return bookStore.addBook(title, author);
+};
+
 const createHTML = () => {
   const docRange = document.createRange();
   const listWrapper = document.getElementById('book-list-wrapper');
@@ -43,24 +61,9 @@ const createHTML = () => {
   }, 500);
 };
 
-const updateBooks = () => {
-  const title = inputTitle.value;
-  const author = inputAuthor.value;
-
-  const errorShow = document.querySelector('.error');
-
-  if (title === '' && author === '') {
-    return errorShow.classList.remove('display-none');
-  }
-  errorShow.classList.add('display-none');
-  inputTitle.value = '';
-  inputAuthor.value = '';
-  return bookStore.addBook(title, author);
-};
-
 // run functions on window load
 window.addEventListener('load', () => {
-  document.getElementById('date-time').innerText = `${today.getFullYear()}-${today.getMonth() + 1}-${today.getDate()} ${today.getHours()}:${today.getMinutes()}:${today.getSeconds()}`;
+  document.getElementById('date-time').innerText = today.toLocaleString(DateTime.DATETIME_FULL);
 
   listLink.addEventListener('click', () => {
     listBookPage.style = 'display: flex';
