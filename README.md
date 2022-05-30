@@ -1,62 +1,39 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
-
-> Description the project.
-
+# Awesome Books
+It's a project of Awesome books: With plain HTML5, CSS3, JS, and ES6 modular structure implemented
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
-
-## Live Demo (if available)
-
-[Live Demo Link](https://livedemo.com)
-
+- HTML5
+- CSS3
+- JavaScript
+- Linter
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+- NodeJs, npm needs to be installed in system
+- For local project set up, run ``` git clone https://github.com/RitobrotoMukherjee/awesome-books-modular.git ```
 
+## Install Linters
 
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
-
+- Run ``` npm install ```
 
 ## Authors
 
-👤 **Author1**
+👤 **Ritobroto Mukherjee**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- Portfolio: [@Rito](https://ritobrotomukherjee.github.io/Work-Portfolio/)
+- GitHub: [@RitobrotoMukherjee](https://github.com/RitobrotoMukherjee)
+- Twitter: [@RitobrotoM3](https://twitter.com/RitobrotoM3)
+- LinkedIn: [Ritobroto Mukherjee](https://www.linkedin.com/in/ritobroto-mukherjee-519148ba/)
 
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+- Feel free to check the [issues page](../../issues/).
 
 ## Show your support
 
@@ -64,10 +41,6 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- Microverse: [View Site](https://www.microverse.org/)
 
-## 📝 License
-
-This project is [MIT](./MIT.md) licensed.
+## Code Reviewers

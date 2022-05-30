@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awesome Books</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="header nav-items">
+                <h4>Awesome Books</h4>
+            </div>
+            <ul class="nav-link nav-items">
+                <li class="nav-link-items">
+                    <a class="nav-links" data-section="book-list-section" href="#book-list-section">List</a>
+                </li>
+                <li class="nav-link-items">
+                    <a class="nav-links" data-section="add-books" href="#add-books">Add New</a>
+                </li>
+                <li class="nav-link-items">
+                    <a class="nav-links" data-section="contact-info-section" href="#contact-info-section">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="date-time">
+            <p id="date-time"></p>
+        </div>
+    </header>
+    <main>
+        <section id="book-list-section" class="info-section">
+            <h1 class="contact-list-infos" >Awesome Books</h1>
+            <div id="book-list-wrapper" class="contact-list-infos">
+            </div>
+        </section>
+        <section id="add-books" class="info-section text-center display-none">
+            <h2>Add a New Book</h2>
+            <div id="add-book-form">
+                <div class="form-holder">
+                    <input id="book-title" type="text" name="title" placeholder="Title">
+                    <input id="book-author" type="text" name="author" placeholder="Author">
+                    <span class="error display-none">Title and Author fields are required</span>
+                    <button id="add-btn" type="button">
+                        Add
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section id="contact-info-section" class="info-section display-none">
+            <h2>Contact Information</h2>
+            <div class="section-infos">
+                <p class="main-paragraph">
+                    Do You have any questions or you just want to say "Hello"?
+                    <br />
+                    You can reach out to us!
+                </p>
+            </div>
+            <div class="section-infos">
+                <ul class="contact-info-list">
+                    <li class="contact-info-list-items">
+                        Our Email: <a href="mailto:mail@mail.com">mail@mail.com</a>
+                    </li>
+                    <li class="contact-info-list-items">
+                        Our Phone: <a href="tel:+91123456789">+91 123456789</a>
+                    </li>
+                    <li class="contact-info-list-items">
+                        Our Address: Street Name 22, 84503 City, Country
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div id="copyright" class="footer-items">
+            <h2>Copyright ...</h2>
+        </div>
+    </footer>
+    <script type="module" src="../javascript/script.js"></script>
+</body>
+
+</html>
