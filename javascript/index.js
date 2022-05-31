@@ -30,7 +30,7 @@ const updateBooks = () => {
 
   const errorShow = document.querySelector('.error');
 
-  if (title === '' && author === '') {
+  if (title === '' || author === '') {
     return errorShow.classList.remove('display-none');
   }
   errorShow.classList.add('display-none');
